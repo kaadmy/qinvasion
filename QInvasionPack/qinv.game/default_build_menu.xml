@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!--
+build commands
+[RadiantPath]: path to Radiant .. C:\Program Files\Gtkradiant
+[EnginePath]: path to the engine .. C:\quake3\ C:\Program Files\Quake III Arena\ /usr/local/games/quake3/
+-->
+
+<!-- I use a script to build because hmap2 doesn't log to console with NetRadiant -->
+
+<project version="2.0">
+  <var name="bsp">"[RadiantPath]hmap2"</var>
+  <build name="-bsp">
+    <command>[bsp] "[MapFile]"</command>
+  </build>
+  <build name="-bsp -notex">
+    <command>[bsp] -notex "[MapFile]"</command>
+  </build>
+  <build name="-bsp -onlyents">
+    <command>[bsp] -onlyents "[MapFile]"</command>
+  </build>
+  <build name="-bsp -vis">
+    <command>[bsp] -vis "[MapFile]"</command>
+  </build>
+  <build name="-bsp -vis -fast">
+    <command>[bsp] -vis -fast "[MapFile]"</command>
+  </build>
+  <build name="-bsp -light">
+    <command>[bsp] -light "[MapFile]"</command>
+  </build>
+  <build name="-bsp -light -extra">
+    <command>[bsp] -light -extra "[MapFile]"</command>
+  </build>
+  <build name="-bsp -light -extra4x4">
+    <command>[bsp] -light -extra4x4 "[MapFile]"</command>
+  </build>
+  <build name="-bsp -light -extra8x8">
+    <command>[bsp] -light -extra8x8 "[MapFile]"</command>
+  </build>
+</project>
+
