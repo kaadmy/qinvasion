@@ -8,3 +8,4 @@
 qinvasion/maps/*.autosave.map
 qinvasion/maps/*.prt
 qinvasion/maps/*.bak
+qinvasion/qc/error.log

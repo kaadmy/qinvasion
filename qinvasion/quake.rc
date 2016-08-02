@@ -1,0 +1,8 @@
+// use defaults if there's nothing else
+exec default.cfg
+
+// load the player's config
+exec config.cfg
+
+// then the autoexec, which is never overwritten
+exec autoexec.cfg
